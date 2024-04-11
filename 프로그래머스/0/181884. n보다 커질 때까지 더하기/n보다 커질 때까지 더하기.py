@@ -1,0 +1,9 @@
+def solution(numbers, n):
+    answer = 0
+    result = 0
+    for num in numbers:
+        result += num
+        if result > n:
+            return result
+        
+    return answer
