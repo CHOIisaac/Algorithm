@@ -1,6 +1,6 @@
 def solution(dot):
     answer = 0
-    a, b = dot[0], dot[1]
+    a, b = dot
     
     if a > 0 and b > 0:
         answer = 1
