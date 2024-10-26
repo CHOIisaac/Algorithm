@@ -5,7 +5,6 @@ def solution(n):
     x, y = 0, 0
     c = 1
     dt = 0
-
     while c <= n * n:
         answer[x][y] = c
         c+=1
