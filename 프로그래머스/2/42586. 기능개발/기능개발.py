@@ -6,7 +6,6 @@ def solution(progresses, speeds):
             cnt+=1
             progresses.pop(0)
             speeds.pop(0)
-
         progresses = [progresses[i]+speeds[i] for i in range(len(progresses))]
         if cnt:
             answer.append(cnt)
