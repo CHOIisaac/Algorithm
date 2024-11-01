@@ -12,5 +12,4 @@ def solution(s):
     else:
         if a:
             answer = False
-
     return answer
