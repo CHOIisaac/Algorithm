@@ -1,6 +1,7 @@
 from itertools import permutations
 
-def is_prime(n):
+
+def is_perm(n):
     if n < 2:
         return False
     for i in range(2, int(n ** 0.5) + 1):
@@ -9,16 +10,12 @@ def is_prime(n):
     return True
 
 def solution(numbers):
-    all_combinations = set()
-    
-    # 모든 순열 생성
+    set_ = set()
     for i in range(1, len(numbers) + 1):
         perms = permutations(numbers, i)
         for perm in perms:
-            number = int(''.join(perm))
-            all_combinations.add(number)
+            set_.add(int(''.join(perm)))
     
-    # 소수 개수 카운트
-    prime_count = sum(1 for num in all_combinations if is_prime(num))
+    answer = sum(1 for a in set_ if is_perm(a))
     
-    return prime_count
+    return answer
