@@ -13,6 +13,5 @@ def solution(n, lost, reserve):
                 answer += 1
                 reserve.remove(j)
                 break
-            
     answer += n - len(lost)   
     return answer
