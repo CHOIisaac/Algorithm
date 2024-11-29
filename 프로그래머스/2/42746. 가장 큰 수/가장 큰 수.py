@@ -5,5 +5,6 @@ def solution(numbers):
     nums_ = ''.join(nums)
     if nums_[0] == '0':
         return '0'
+    
     answer = nums_
     return answer
