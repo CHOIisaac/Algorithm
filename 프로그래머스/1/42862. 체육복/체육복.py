@@ -2,6 +2,7 @@ def solution(n, lost, reserve):
     answer = 0
     lost.sort()
     reserve.sort()
+    
     if set(lost) & set(reserve):
         list_ = set(lost) & set(reserve)
         for a in list_:
